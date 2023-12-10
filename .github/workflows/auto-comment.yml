@@ -4,7 +4,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: bubkoo/auto-comment@v1.0.7
+      - uses: wow-actions/auto-comment@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpened: >
@@ -25,12 +25,12 @@ jobs:
 
             We will review this PR as soon as possible. Thank you for your patience.
 
-          pullRequestClosed: >
+          pullRequestMerged: >
             🚀 Hi @{{ author }},
 
             You are amazing! Thank you for your contributions. Your contributions are what makes reNgine awesome!
 
-            This pull request has now been closed.
+            This pull request has now been merged.
 
             We look forward to your more contributions and support.
 
